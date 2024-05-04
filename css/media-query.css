@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tamanho para Tablet */
+    .flex {
+        flex-direction: row;
+    }
+
+    section#banner {
+        height: 100vh;
+    }
+
+    main > section#sobre {
+        flex-direction: row-reverse;
+        height: fit-content;
+    }
+
+    section > article#perfil {
+        width: 200vw;
+        height: 50vh;
+    }
+
+    article#cards {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 95vw;
+        flex-wrap: wrap;
+    }
+
+    .card-projeto {
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) { /* Tamanho para desktop */
+    .flex {
+        flex-direction: row;
+    }
+
+    section#banner {
+        height: 100vh;
+    }
+
+    main > section#sobre {
+        flex-direction: row;
+        height: 380px;
+    }
+
+    section > article#perfil {
+        width: 85%;
+        height: 85%;
+    }
+
+    article#cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .card-projeto {
+        margin: 15px;
+    }
+}
