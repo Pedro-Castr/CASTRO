@@ -110,9 +110,8 @@ nav > ul > li > a:hover::before {
 section#banner {
     height: 90vh;
     background-image: url(../imagens/background.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 main > section#sobre {
