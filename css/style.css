@@ -58,10 +58,10 @@ header.rolagem {
 header > div > nav > a {
     font-family: var(--fonte-titulo);
     color: #fff;
-    font-size: 2.1em;
+    font-size: 2em;
     text-decoration: none;
     font-style: italic;
-    text-shadow: 3px 3px rgba(0, 0, 0, 0.555);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.664);
 }
 
 nav {
@@ -77,14 +77,14 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    margin: 0px 30px;
+    margin: 0 20px;
 }
 
 nav > ul > li > a {
     font-family: var(--fonte-destaque);
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     position: relative;
 }
 

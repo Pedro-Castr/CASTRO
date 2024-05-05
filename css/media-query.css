@@ -5,6 +5,15 @@
         flex-direction: row;
     }
 
+    nav > ul > li {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+
+    nav > ul > li > a {
+        font-size: 1.2em;
+    }
+
     section#banner {
         height: 100vh;
     }
@@ -34,6 +43,15 @@
 @media screen and (min-width: 992px) { /* Tamanho para desktop */
     nav {
         flex-direction: row;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+
+    nav > ul > li > a {
+        font-size: 1.2em;
     }
 
     section#banner {
