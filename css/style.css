@@ -16,9 +16,14 @@
 }
 
 :root {
-    --cor-bg: #f5f5f5;
-    --cor1: #323232;
-    --cor2: #e0e0e0;
+    --cor-titulo01: #12012c;
+    --cor-titulo02: ;
+    --cor-titulo03: ;
+    --cor-texto: #323232;
+    --cor-fundo: #e0e0e0;
+    --cor01: #5a348f;
+    --cor02: #3a86ff;
+    --cor03: #8ac926;
 
     --fonte-titulo: "Grotesk", sans-serif;
     --fonte-destaque: 'Poppins-M', sans-serif;
@@ -32,8 +37,10 @@
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--cor-bg);
+    background-color: #f5f5f5;
 }
+
+/* Início da estilização do header */
 
 .container {
     max-width: 1280px;
@@ -51,7 +58,7 @@ header {
 }
 
 header.rolagem {
-    background-color: var(--cor1);
+    background-color: var(--cor01);
     padding: 15px 0px;
 }
 
@@ -114,6 +121,8 @@ section#banner {
     background-size: cover;
 }
 
+/* Início da estilização da parte "Sobre" */
+
 main > section#sobre {
     margin: 20px;
     display: flex;
@@ -133,7 +142,7 @@ section > article#perfil {
     background-size: cover;
     background-position: center center;
     border-radius: 12px;
-    border: 4px solid var(--cor1);
+    border: 4px solid var(--cor01);
 }
 
 section > article#perfil:hover {
@@ -144,6 +153,7 @@ section > article#perfil:hover {
 
 section > article > h2 {
     font-family: var(--fonte-destaque);
+    color: var(--cor-titulo01);
     text-align: center;
 }
 
@@ -161,7 +171,7 @@ div.icones {
 .card {
     width: fit-content;
     height: fit-content;
-    background-color: var(--cor2);
+    background-color: var(--cor-fundo);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +184,7 @@ div.icones {
 .socialContainer {
     width: 52px;
     height: 52px;
-    background-color: var(--cor1);
+    background-color: var(--cor01);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,6 +236,8 @@ div.icones {
     }
 }
 
+/* Início da estilização da parte "Projetos" */
+
 section#projetos {
     display: flex;
     align-items: center;
@@ -235,6 +247,7 @@ section#projetos {
 
 section#projetos > article > h1 {
     font-family: var(--fonte-destaque);
+    color: var(--cor-titulo01);
     font-size: 2em;
 }
 
@@ -250,7 +263,7 @@ article#cards {
     width: 250px;
     height: 350px;
     border-radius: 20px;
-    background-color: var(--cor2);
+    background-color: var(--cor-fundo);
     box-shadow: 3px 3px 15px #5a5a5a;
     display: flex;
     flex-direction: column;
@@ -290,7 +303,7 @@ article#cards {
 
 .card__title {
     font-family: var(--fonte-destaque);
-    color: var(--cor1);
+    color: var(--cor-texto);
     text-align: center;
     font-size: 1em;
 }
@@ -298,14 +311,14 @@ article#cards {
 .card__descr {
     display: flex;
     align-self: flex-start;
-    color: var(--cor1);
+    color: var(--cor-texto);
 }
 
 .svg {
     width: 25px;
     height: 25px;
     transform: translateY(25%);
-    fill: var(--cor1);
+    fill: var(--cor-texto);
 }
 
 .card__links {
@@ -316,7 +329,7 @@ article#cards {
 }
 
 .card__links .link {
-    color: var(--cor1);
+    color: var(--cor-texto);
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
@@ -326,12 +339,108 @@ article#cards {
     text-decoration: underline;
 }
 
+/* Início da parte "Personalize" */
+
+section#personalize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95vw;
+    margin: auto;
+}
+
+section#personalize > article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personalize > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-titulo01);
+    font-size: 2em;
+}
+
+div#muda-cor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+div#checkboxes {
+    display: flex;
+    gap: 30px;
+    padding: 5px 0px;
+}
+
+.checkBox {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#cb1 {
+    border: 3px solid #8338ec;
+}
+
+#cb2 {
+    border: 3px solid #3a86ff;
+}
+
+#cb3 {
+    border: 3px solid #8ac926;
+}
+
+.checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 255, 0);
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+}
+
+#cb1 div {
+    background-color: #8338ec;
+}
+
+#cb2 div {
+    background-color: #3a86ff;
+}
+
+#cb3 div {
+    background-color: #8ac926;
+}
+
+.checkBox input[type="checkbox"]:checked + div {
+    left: -10px;
+    top: -10px;
+}
+
+.checkBox input[type="checkbox"] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+}
+
+.transition {
+    transition: 300ms ease;
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    background-color: var(--cor1);
+    height: 50px;
+    background-color: var(--cor01);
     color: #fff;
 }
 
