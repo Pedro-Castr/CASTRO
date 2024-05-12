@@ -16,12 +16,10 @@
 }
 
 :root {
-    --cor-titulo01: #000000;
-    --cor-titulo02: ;
-    --cor-titulo03: ;
+    --cor-titulo01: #000;
     --cor-texto: #323232;
     --cor-fundo: #e0e0e0;
-    --cor01: #5a348f;
+    --cor01: #351143;
 
     --fonte-titulo: "Grotesk", sans-serif;
     --fonte-destaque: 'Poppins-M', sans-serif;
@@ -114,7 +112,7 @@ nav > ul > li > a:hover::before {
 
 section#banner {
     height: 90vh;
-    background-image: url(../imagens/background.jpg);
+    background-image: url(../imagens/background-roxo.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -182,7 +180,7 @@ div.icones {
 .socialContainer {
     width: 52px;
     height: 52px;
-    background-color: var(--cor01);
+    background-color: var(--cor-texto);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -390,15 +388,15 @@ div#muda-cor {
 }
 
 div#roxo {
-    border: 3px solid #8338ec;
+    border: 3px solid #351143;
 }
 
 div#azul {
-    border: 3px solid #3a86ff;
+    border: 3px solid #002A6D;
 }
 
 div#verde {
-    border: 3px solid #8ac926;
+    border: 3px solid #006D66;
 }
 
 .radio-circle::before {
@@ -419,15 +417,15 @@ div#verde {
 }
 
 .radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
-    background-color: #8338ec;
+    background-color: #351143;
 }
 
 .radio-button:nth-of-type(2) input[type="radio"]:checked + .radio-circle::before {
-    background-color: #3a86ff;
+    background-color: #002A6D;
 }
 
 .radio-button:nth-of-type(3) input[type="radio"]:checked + .radio-circle::before {
-    background-color: #8ac926;
+    background-color: #006D66;
 }
 
 footer {
