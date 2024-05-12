@@ -16,14 +16,12 @@
 }
 
 :root {
-    --cor-titulo01: #12012c;
+    --cor-titulo01: #000000;
     --cor-titulo02: ;
     --cor-titulo03: ;
     --cor-texto: #323232;
     --cor-fundo: #e0e0e0;
     --cor01: #5a348f;
-    --cor02: #3a86ff;
-    --cor03: #8ac926;
 
     --fonte-titulo: "Grotesk", sans-serif;
     --fonte-destaque: 'Poppins-M', sans-serif;
@@ -369,70 +367,67 @@ div#muda-cor {
     padding: 10px 0px;
 }
 
-div#checkboxes {
+.radio-buttons {
     display: flex;
-    gap: 30px;
-    padding: 5px 0px;
 }
 
-.checkBox {
-    display: block;
+.radio-button {
+    display: flex;
+    align-items: center;
     cursor: pointer;
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-circle {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     position: relative;
-    overflow: hidden;
+    margin: 10px 15px;
 }
 
-#cb1 {
+div#roxo {
     border: 3px solid #8338ec;
 }
 
-#cb2 {
+div#azul {
     border: 3px solid #3a86ff;
 }
 
-#cb3 {
+div#verde {
     border: 3px solid #8ac926;
 }
 
-.checkBox div {
-    width: 60px;
-    height: 60px;
-    background-color: rgb(0, 255, 0);
-    top: -52px;
-    left: -52px;
+.radio-circle::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     position: absolute;
-    transform: rotateZ(45deg);
-    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
 }
 
-#cb1 div {
+.radio-button input[type="radio"]:checked + .radio-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
     background-color: #8338ec;
 }
 
-#cb2 div {
+.radio-button:nth-of-type(2) input[type="radio"]:checked + .radio-circle::before {
     background-color: #3a86ff;
 }
 
-#cb3 div {
+.radio-button:nth-of-type(3) input[type="radio"]:checked + .radio-circle::before {
     background-color: #8ac926;
-}
-
-.checkBox input[type="checkbox"]:checked + div {
-    left: -10px;
-    top: -10px;
-}
-
-.checkBox input[type="checkbox"] {
-    position: absolute;
-    left: 50px;
-    visibility: hidden;
-}
-
-.transition {
-    transition: 300ms ease;
 }
 
 footer {

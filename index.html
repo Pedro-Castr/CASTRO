@@ -139,25 +139,20 @@
             <article>
                 <div id="muda-cor">
                     <h3>Selecione a cor tema:</h3>
-
-                    <div id="checkboxes">
-                        <!-- Checkbox 1 -->
-                        <label id="cb1" class="checkBox"> 
-                            <input type="checkbox" checked>
-                            <div class="transition"></div>
+                    
+                    <div class="radio-buttons">
+                        <label class="radio-button">
+                            <input type="radio" name="option" value="option1" checked onclick="mudaCor('roxo')">
+                            <div id="roxo" class="radio-circle"></div>
                         </label>
-
-                        <!-- Checkbox 2 -->
-                        <label id="cb2" class="checkBox">
-                            <input type="checkbox">
-                            <div class="transition"></div>
+                        <label class="radio-button">
+                            <input type="radio" name="option" value="option2" onclick="mudaCor('azul')">
+                            <div id="azul" class="radio-circle"></div>
                         </label>
-
-                        <!-- Checkbox 3 -->
-                        <label id="cb3" class="checkBox">
-                            <input type="checkbox">
-                            <div class="transition"></div>
-                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="option" value="option3" onclick="mudaCor('verde')">
+                            <div id="verde" class="radio-circle"></div>
+                        </label>                          
                     </div>
                 </div>
             </article>
