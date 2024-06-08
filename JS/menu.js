@@ -26,7 +26,7 @@ function mudaCor(corSelecionada) {
     }
 }
 
-// código para o carrosel de textos
+// código para o carrossel de textos
 let indexatual = 0;
 const items = document.querySelectorAll('.carousel-item');
 const totalItems = items.length;
