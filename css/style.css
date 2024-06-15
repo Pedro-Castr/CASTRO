@@ -115,7 +115,7 @@ section#banner {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url(../imagens/background-roxo.jpg);
+    background-image: linear-gradient(to right bottom, #3e1646, #4a174d, #561854, #63175a, #701660, #7f1566, #8e136b, #9d106f, #b10d74, #c50877, #da0479, #ee037a);
     background-position: center center;
     background-size: cover;
 }
