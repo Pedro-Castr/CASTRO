@@ -27,14 +27,22 @@ function mudaCor(corSelecionada) {
 }
 
 // código para o carrossel de textos
-let indexatual = 0;
+let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
 const totalItems = items.length;
 
 function showNextItem() {
-    items[indexatual].classList.remove('active');
-    indexatual = (indexatual + 1) % totalItems;
-    items[indexatual].classList.add('active');
+    const currentItem = items[currentIndex];
+    currentItem.classList.remove('active');
+    currentItem.classList.add('exiting');
+
+    currentIndex = (currentIndex + 1) % totalItems;
+    const nextItem = items[currentIndex];
+    nextItem.classList.add('active');
+
+    setTimeout(() => {
+        currentItem.classList.remove('exiting');
+    }, 1000); // Correspondendo ao tempo de transição
 }
 
 setInterval(showNextItem, 5000);
