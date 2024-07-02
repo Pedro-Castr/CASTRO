@@ -19,7 +19,7 @@
     --cor-titulo01: #000;
     --cor-texto: #323232;
     --cor-fundo: #e0e0e0;
-    --cor01: #351143;
+    --cor01: #9205CE;
 
     --fonte-titulo: "Grotesk", sans-serif;
     --fonte-destaque: 'Poppins-M', sans-serif;
@@ -115,7 +115,7 @@ section#banner {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url(../imagens/purple-bg.png);
+    background-image: radial-gradient(circle, #9000cc, #9712d3, #9d1ed9, #a427e0, #ab30e7, #b137eb, #b83ef0, #be44f4, #c54bf7, #cc52f9, #d258fc, #d95fff);
     background-position: center center;
     background-size: cover;
 }
@@ -429,11 +429,11 @@ div#muda-cor {
 }
 
 div#roxo {
-    border: 3px solid #351143;
+    border: 3px solid #9205CE;
 }
 
 div#azul {
-    border: 3px solid #002A6D;
+    border: 3px solid #035393;
 }
 
 div#verde {
@@ -458,11 +458,11 @@ div#verde {
 }
 
 .radio-button:nth-of-type(1) input[type="radio"]:checked + .radio-circle::before {
-    background-color: #351143;
+    background-color: #9205CE;
 }
 
 .radio-button:nth-of-type(2) input[type="radio"]:checked + .radio-circle::before {
-    background-color: #002A6D;
+    background-color: #035393;
 }
 
 .radio-button:nth-of-type(3) input[type="radio"]:checked + .radio-circle::before {
