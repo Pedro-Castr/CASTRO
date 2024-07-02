@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* https://uiverse.io/andrew-demchenk0/chatty-hound-50 */
+
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tamanho para Tablet */
     nav {
         flex-direction: row;
